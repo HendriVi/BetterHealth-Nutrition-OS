@@ -1,0 +1,9 @@
+{
+  "name":"BetterHealth Nutrition OS",
+  "short_name":"Nutrition OS",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f5f3ed",
+  "theme_color":"#102a2e",
+  "icons":[{"src":"assets/mark.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
