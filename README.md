@@ -14,9 +14,24 @@ This repository currently contains a dependency-free interactive vertical-slice 
 - Gated ketogenic metabolic therapy workflow
 - Combined psychiatric, metabolic, sleep and body-composition outcomes
 - Versioned evidence register and traceable recommendation rationale
+- Photo-assisted meal-capture specification
+- Patient confirmation of foods, portions and preparation
+- Food-database provenance and confidence states
+- Existing-diary CSV and JSON import architecture
+- Clinician-gated energy and ketogenic macronutrient calculation design
 - Synthetic patient data only
 
 Open `index.html` directly or serve the repository with any static web server.
+
+## Source-integration policy
+
+The image-recognition workflow was informed by the FoodNutrition-AI proof of concept, but BetterHealth does not accept model-generated nutrient totals as clinical data. Computer vision proposes foods and portions; the patient confirms them; confirmed items are resolved against approved composition databases before clinical rules run.
+
+The reviewed YAZIO repository is an unofficial API description. BetterHealth will not embed reverse-engineered authentication or public client credentials. Patient-controlled CSV and JSON import is the initial migration route.
+
+The `awesome-nutrition-tracking` catalogue is used to identify useful product patterns and candidate services. The planned core food-data stack is the Swiss Food Composition Database, USDA FoodData Central and OpenFoodFacts with source-quality metadata.
+
+The KetoDiet calculator project is GPL-3.0. BetterHealth adopts relevant user-input and warning concepts but uses an independently implemented calculation engine rather than copying GPL code into the proprietary clinical product.
 
 ## Clinical positioning
 
@@ -31,4 +46,10 @@ The product is designed as modular software. General education and wellness func
 5. Add laboratory, wearable and food-composition integrations.
 6. Conduct formal verification, usability testing, clinical validation and regulatory review.
 
-See `docs/PRODUCT_SPEC.md`, `docs/CLINICAL_GOVERNANCE.md` and `docs/EVIDENCE_REGISTER.md`.
+See:
+
+- `docs/PRODUCT_SPEC.md`
+- `docs/CLINICAL_GOVERNANCE.md`
+- `docs/EVIDENCE_REGISTER.md`
+- `docs/OPEN_SOURCE_INTEGRATION_REVIEW.md`
+- `docs/MEAL_CAPTURE_AND_IMPORT_SPEC.md`
